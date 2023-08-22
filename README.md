@@ -3,6 +3,7 @@
 **Welcome to my online portfolio**, where I share my projects, experience, and knowledge in development. I'm passionate about web development and primarily use **Django**, a Python framework, to create innovative and efficient applications.
 
 ## Sections
+***
 
 - **Blog**: In the **Blog** section, you'll find articles on various topics related to web development, best practices, and emerging technologies. My goal is to share my knowledge and inspire fellow developers while staying up to date with the latest trends.
 
