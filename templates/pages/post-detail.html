@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="max-w-4xl pt-8 mx-auto">
+    <main class="space-y-4">
+        <header class="header text-center space-y-6">
+            <h1 class="text-4xl font-extrabold">{{ post.title }}</h1>
+            <p class="text-gray-500">
+                {{ post.overview|safe }}
+            </p>
+            <div class="flex space-x-4 justify-center">
+                <span class="text-gray-500">🗓️ {{ post.created|date }}</span> <span>•</span>
+                <span class="text-gray-500">
+                    <i class="bx bxs-user"></i>
+                    {{ post.author }}
+                </span>
+                <span>•</span>
+                <span class="text-gray-500">👁️</span>
+            </div>
+            <img src="{{ post.thumbnail.url }}" alt="" class="w-full">
+        </header>
+        <div id="content"
+            class="content text-md leading-loose md:leading-9 md:text-lg pt-4 pb-8 text-gray-600 px-4 md:px-0">
+            {{ post.content|safe }}
+        </div>
+    </main>
+</div>
+{% endblock content %}

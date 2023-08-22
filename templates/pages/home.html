@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="flex flex-col">
+  <main>
+    <div class="space-y-2 md:my-4 md:pb-8 md:pt-6 md:space-y-5 xl:grid grid-cols-3">
+      <div class="px-6 md:px-0 md:pr-10 xl:col-span-2">
+        <!-- coding -->
+        <div class="md:pr-8 xl:col-span-2">
+          <div
+            class="bg-gradient-to-r from-purple-500 to-pink-500 mb-8 bg-clip-text text-4xl font-extrabold leading-[60px] tracking-tight text-transparent md:text-7xl md:leading-[86px]">
+            Hello, friend! <i class="twa twa-waving-hand"></i>
+          </div>
+          <div class="text-lg leading-8 text-gray-600">
+            <h1 class="text-neutral-900">
+              I'm
+              <span class="font-medium">
+                Moustapha Diarra
+              </span>
+              - a <!-- -->
+              <span class="font-medium">Software Engineer</span>
+              in<!-- -->
+              <span class="hidden font-medium">Russia, RU</span>
+              <span class="absolute ml-1.5 inline-flex pt-[3px]">
+                🇷🇺
+              </span>
+            </h1>
+            <div class="mb-8 mt-4">
+              <p class="text-lg text-gray-600 leading-8">
+                I am a passionate Full-Stack Developer with a Bachelor's and Master's degree in Software Engineering. My
+                expertise lies
+                in web and mobile development, with a focus on technologies like <span
+                  class="font-extrabold text-gray-900">Python</span>,
+                <span class="font-extrabold text-gray-900">Django</span>, <span
+                  class="font-extrabold text-gray-900">ReactJS</span>, and <span
+                  class="font-extrabold text-gray-900">Flutter</span> . I
+                have a
+                understanding of software engineering principles and continuously strive to stay up-to-date with the
+                latest
+                technological trends.
+              </p>
+            </div>
+
+            <p class="my-8 flex">
+              <span class="mr-2">Happy reading</span>
+              <i class="inline-block twa twa-lg twa-clinking-beer-mugs"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden xl:block">
+        <div class="z-10 mb-8 scale-100 transition-all ease-out duration-200 xl:hover:scale-[1.15] hover:z-50">
+          <div
+            class="flex flex-col overflow-hidden bg-white shadow-cyan-100/50 transition-all duration-200 ease-out xl:rounded-lg xl:shadow-lg">
+            <img src="{% static 'img/me_r.jpeg' %}" alt="" width="550" height="350" class="img_card">
+            <div class="flex items-center bg-gray-800 px-3 py-2 xl:px-6">
+              <div class="ml-2 inline-flex truncate">
+                <p class="font-medium text-white">Not Playing</p>
+                <span class="mx-2 text-gray-300"> – </span>
+                <p class="max-w-max truncate text-gray-300">Spotify</p>
+              </div>
+            </div>
+            <div class="hidden py-4 xl:block xl:px-6">
+              <h3 class="text-xl font-semibold text-gray-800">Moustapha (Dino) Diarra</h3>
+              <h5 class="py-2 text-gray-700">Software engineer | python🐍 & flutter💎</h5>
+              <div class="mb-2 mt-4 space-y-4">
+                <div class="flex items-center text-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  <p class="px-2">[::]Imama Shamilya 70 - Makachkala,
+                    <span class="absolute ml-1 inline-flex pt-px">
+                      🇷🇺
+                    </span>
+                  </p>
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                  </svg>
+                  <a class="px-2" href="mailto:diarra.msa@gmail.com">diarra.msa@gmail.com</a>
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                  <p class="flex space-x-1.5 px-2">
+                    <a target="_blank" href="https://github.com/dinoru" rel="noreferrer" class="hover:underline"
+                      data-umami-event="profile-card-github">gh/<!-- -->dinoru</a>
+                    <span class="text-gray-400">|</span>
+                    <a target="_blank" href="#" rel="noreferrer" class="hover:underline"
+                      data-umami-event="profile-card-linkedin">in/<!-- -->dm</a>
+                    <span class="text-gray-400">|</span>
+                    <a target="_blank" href="#" rel="noreferrer" class="hover:underline"
+                      data-umami-event="profile-card-twitter">tw/<!-- -->dm</a>
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+            <span class="h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blog posts sections -->
+    <section class="text-gray-600 body-font overflow-hidden">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="-my-8 divide-y-2 divide-gray-100">
+          <!-- div blog post 1 -->
+          {% for post in posts %}
+          <a href="{% url 'post_detail' post.slug %}" class="no-underline">
+            {% if forloop.first %}
+            <div class="py-8 md:px-6 flex flex-wrap md:flex-nowrap items-center md:hover:shadow-lg">
+              <div class="md:w-[500px] md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                <span class="mt-1 text-gray-500 text-sm mb-2">{{ post.created|date }}</span>
+                <img src="{{ post.thumbnail.url }}" alt="" class="w-full h-full">
+              </div>
+              <div class="md:flex-grow ml-6">
+                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{{ post.title }}</h2>
+                <p class="leading-relaxed">{{ post.overview|safe }}</p>
+                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {%else %}
+            <div class="py-8 flex flex-wrap md:flex-nowrap items-center">
+              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                <span class="mt-1 text-gray-500 text-sm mb-2">{{ post.created|date }}</span>
+                <img src="{{ post.thumbnail.url }}" alt="" class="w-full h-full">
+              </div>
+              <div class="md:flex-grow ml-6">
+                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{{ post.title }}</h2>
+                <p class="leading-relaxed">{{ post.overview|safe }}</p>
+                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!-- End blog posts -->
+  </main>
+</div>
+{% endblock content %}

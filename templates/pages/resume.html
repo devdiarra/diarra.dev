@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="resume" class="resume space-y-6 ">
+    <div class="main px-4 md:px-0">
+        <div class="divide-y-2">
+            <div class="py-8 space-y-5">
+                <h1 class="text-5xl">Resume</h1>
+                <p class="text-gray-600 text-lg">My experiences and Skills</p>
+            </div>
+            <div class="py-4 grid grid-cols-3">
+                <div class="col-span-3 space-y-5 pt-8">
+                    <h2 class="text-4xl">Moustapha Diarra (Dino)</h2>
+                    <h4 class="text-gray-500">Software Engineer - Russia 🇷🇺</h4>
+                    <h2 class="text-4xl py-5">Summary</h2>
+                    <p class="text-gray-700 leading-8">
+                        Graduated from a Master in <strong>Software Engineering</strong> at Dagestan State Technical
+                        University, I am passionate about digital and new technologies.
+                    </p>
+                    <p>
+                        Learning new languages and technologies, especially Python-related, is what I am passionate
+                        about.
+                    </p>
+                    <h2 class="text-4xl py-5">Education</h2>
+                    <p class="font-semibold text-xl">
+                        Master's in Software Engineering @<a href="https://dstu.ru/"
+                            class="underline underline-offset-2 text-blue-800">DSTU</a>
+                    </p>
+                    <p class="relative"><code
+                            class="before:content-['&#96;'] after:content-['&#180;'] bg-gray-300 p-1 text-gray-500 rounded-lg">Sept 2021 - juin 2023</code>
+                    </p>
+                    <h2 class="text-4xl py-5">Technical Skills</h2>
+                    <table class="table w-full">
+                        <thead class="border-b text-left ">
+                            <tr>
+                                <th class="py-4">Programming Languages</th>
+                                <th class="py-4">Platforms / Frameworks / Libraries</th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-b">
+                            <tr class="border-b">
+                                <td class="py-4">Python 3.x, JavaScript</td>
+                                <td class="py-4">Django(Python), Flutter, FastApi, Django rest framework</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4">HTML5, CSS3</td>
+                                <td class="py-4">Node.js, React.js</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4">Java, C++</td>
+                                <td class="py-4">TypeScript, Express, JWT, GraphQL</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4"></td>
+                                <td class="py-4">jQuery, Bootstrap, Tailwind CSS, SCSS, Semantic UI</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4"></td>
+                                <td class="py-4">Flask (Python), Java Swing</td>
+                            </tr>
+                            <tr class="border-b py-4">
+                                <td class="py-4"><span class="font-semibold">Version Control</span></td>
+                                <td class="py-4"><span class="font-semibold">Foreign Languages</span></td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4">Git (GitHub, Gitlab, Bitbucket)</td>
+                                <td class="py-4">English</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="text-4xl py-5">Working Experience</h2>
+                    <p class="font-semibold text-2xl">Freelance on Fiverr <span
+                            class="underline text-blue-600">@kingmoustapha</span></p>
+                    <h2 class="text-4xl py-5">Projects</h2>
+                    <p>
+                        you can see all projects <a href="{% url 'projects' %}"
+                            class="text-blue-800 underline-offset-2">here!</a>
+                    </p>
+                    <h2 class="text-4xl py-5">Interests</h2>
+                    <p class="text-2xl">Sport:</p>
+                    <ul class="list-disc pl-8 text-gray-600">
+                        <li class="py-2">⚽️ Football</li>
+                        <li class="py-2">🏊🏿 Swimming</li>
+                        <li class="py-2">🏋🏿 Fitness</li>
+                    </ul>
+                    <hr>
+                    <div class="hidden md:grid grid-cols-3 gap-4">
+                        <div class="img-1 h-[250px]">
+                            <img src="{% static 'img/football.jpeg' %}" alt="" class="w-full h-full">
+                        </div>
+                        <div class="img-2 h-[250px]">
+                            <img src="{% static 'img/me_swim.jpeg' %}" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="img-3 h-[250px]">
+                            <img src="{% static 'img/me-fitness.webp' %}" alt="" class="h-full w-full">
+                        </div>
+                    </div>
+                    <h2 class="text-2xl">Others:</h2>
+                    <ul class="list-disc pl-8 text-gray-600">
+                        <li class="py-2">✈️ Discovery & Traveling</li>
+                        <li class="py-2">🎶 Music (Rap, Pop, etc...)</li>
+                        <li class="py-2">📚 Writting & Reading</li>
+                    </ul>
+                    <p class="text-gray-600 leading-8">
+                        Feel free to contact me to discuss your projects or learn more about my professional background.
+                        I am open to
+                        collaboration and learning opportunities. I look forward to working on exciting projects and
+                        contributing to their
+                        success!
+                    </p>
+                    <h2 class="text-4xl">Contacts</h2>
+                    <div class="flex items-center text-gray-700">
+                        <span class="mr-4 p-4 rounded-full border-2 border-gray-200">
+                            <a href="mailto:diarra.msa@gmail.com" class="text-2xl text-gray-500"><i
+                                    class='bx bx-envelope'></i></a>
+                        </span>
+                        <span class="mr-4 rounded-full border-2 border-gray-200 p-4">
+                            <a href="#" class="text-2xl text-gray-500"><i class='bx bxl-github'></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

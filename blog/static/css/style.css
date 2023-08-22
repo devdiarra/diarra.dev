@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img_card {
+    object-fit: cover;
+    aspect-ratio: 17/11;
+    width: 100%;
+    color: transparent;
+    object-position: 50% 16%;
+}
+
+.header p {
+    color: #64748b;
+}
+
+.content p {
+    line-height: 2;
+}
+
+.project table, .content table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.project th, .project td, .content th, .content td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.content th {
+    font-family: 'Rock Salt', cursive;
+}
+
+pre {
+    margin: 10px 0;
+}
+
+pre code.hljs {
+    border-radius: 10px;
+}
+
+.content div {
+    border: 1px solid #f4f4f4;
+    padding: 2rem;
+}
+
+.project div #lien {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+#project p #lien {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+.content ul {
+    margin-bottom: 2rem;
+}
+
+.content ul li {
+    list-style: disc;
+    margin-left: 3rem;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.project table, 
+.content table {
+    margin-top: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.mobile-menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    text-align: center;
+    background: #fff;
+}
+
+#project h2, 
+#project h4,
+#project h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1.5;
+    margin: 1rem 0;
+}
+
+#project h4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccd2da;
+}
+
+#project h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccd2da;
+}
+
+#project h5::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccd2da;
+}
+
+#content pre {
+    margin: 1rem 0;
+}
